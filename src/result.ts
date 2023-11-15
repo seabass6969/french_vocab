@@ -1,2739 +1,3530 @@
-export let test = [
+export interface vocab {
+    french: string
+    english: string
+    topic_name: string
+    foundation: boolean
+    higher: boolean
+    theme_based: boolean
+    theme: string
+}
+export let test: vocab[] = [
     {
         "french": "plus/moins",
         "english": "more/less",
         "topic_name": "Comparisons",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "plus que/moins que",
         "english": "more than/less than",
         "topic_name": "Comparisons",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "bon/meilleur/le meilleur",
         "english": "good/better/best",
         "topic_name": "Comparisons",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "mauvais/pire/le pire",
         "english": "bad/worse/worst",
         "topic_name": "Comparisons",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "bien/mieux/le mieux",
         "english": "well/better/best",
         "topic_name": "Comparisons",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "mal/plus mal/le plus mal",
         "english": "badly/worse/worst",
         "topic_name": "Comparisons",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "beaucoup/plus/le plus",
         "english": "lots/more/the most",
         "topic_name": "Comparisons",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "peu/moins/le moins",
         "english": "few, little/less/the least",
         "topic_name": "Comparisons",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "\u00e0 cause de ",
         "english": "because of",
         "topic_name": "Conjunctions and connectives",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "\u00e0 part",
         "english": "apart from",
         "topic_name": "Conjunctions and connectives",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "ainsi",
         "english": "so, therefore",
         "topic_name": "Conjunctions and connectives",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "alors",
         "english": "so, therefore, then",
         "topic_name": "Conjunctions and connectives",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "aussi",
         "english": "also",
         "topic_name": "Conjunctions and connectives",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "car",
         "english": "because",
         "topic_name": "Conjunctions and connectives",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "cependant",
         "english": "however",
         "topic_name": "Conjunctions and connectives",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "c\u2019est-\u00e0-dire",
         "english": "that is to say, i.e.",
         "topic_name": "Conjunctions and connectives",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "\u00e0",
         "english": "to, at",
         "topic_name": "Prepositions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "\u00e0 c\u00f4t\u00e9 de",
         "english": "next to",
         "topic_name": "Prepositions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "\u00e0 travers",
         "english": "across, through",
         "topic_name": "Prepositions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "au bord de",
         "english": "at the side/edge of",
         "topic_name": "Prepositions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "au bout de",
         "english": "at the end of (ie length, rather than time)",
         "topic_name": "Prepositions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "au-dessous de",
         "english": "beneath, below",
         "topic_name": "Prepositions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "au-dessus de",
         "english": "above,over",
         "topic_name": "Prepositions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "au fond de",
         "english": "at the back of, at the bottom of",
         "topic_name": "Prepositions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "au lieu de",
         "english": "instead of",
         "topic_name": "Prepositions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "au milieu de",
         "english": "in the middle of",
         "topic_name": "Prepositions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "autour de",
         "english": "around",
         "topic_name": "Prepositions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "contre",
         "english": "against",
         "topic_name": "Prepositions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "de",
         "english": "of, from",
         "topic_name": "Prepositions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "depuis",
         "english": "since, for",
         "topic_name": "Prepositions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "derri\u00e8re",
         "english": "behind",
         "topic_name": "Prepositions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "devant",
         "english": "in front of",
         "topic_name": "Prepositions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "en",
         "english": "in, within (time)",
         "topic_name": "Prepositions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "en dehors de",
         "english": "outside (of)",
         "topic_name": "Prepositions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "en face de",
         "english": "opposite",
         "topic_name": "Prepositions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "entre",
         "english": "between",
         "topic_name": "Prepositions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "jusqu\u2019\u00e0",
         "english": "up to, until",
         "topic_name": "Prepositions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "malgr\u00e9",
         "english": "despite, in spite of",
         "topic_name": "Prepositions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "parmi",
         "english": "amongst",
         "topic_name": "Prepositions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "pour",
         "english": "for, in order to",
         "topic_name": "Prepositions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "pr\u00e8s de",
         "english": "near",
         "topic_name": "Prepositions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "sans",
         "english": "without",
         "topic_name": "Prepositions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "selon",
         "english": "according to",
         "topic_name": "Prepositions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "sous",
         "english": "under",
         "topic_name": "Prepositions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "sur",
         "english": "on",
         "topic_name": "Prepositions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "vers",
         "english": "towards",
         "topic_name": "Prepositions"
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "ne...jamais",
         "english": "never",
         "topic_name": "Negatives",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "ne\u2026pas",
         "english": "not",
         "topic_name": "Negatives",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "ne...personne",
         "english": "nobody, no-one",
         "topic_name": "Negatives",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "ne...plus ",
         "english": "no more, no longer",
         "topic_name": "Negatives",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "ne\u2026que",
         "english": "only, nothing but",
         "topic_name": "Negatives",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "ne\u2026rien",
         "english": "nothing",
         "topic_name": "Negatives",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "ni\u2026ni",
         "english": "neither\u2026.nor",
         "topic_name": "Negatives",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "pas encore",
         "english": "not yet",
         "topic_name": "Negatives",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "dizaine une",
         "english": "about 10",
         "topic_name": "Other number expressions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "douzaine une",
         "english": "dozen",
         "topic_name": "Other number expressions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "nombre de",
         "english": "number of",
         "topic_name": "Other number expressions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "combien ? ",
         "english": "how much, how many?",
         "topic_name": "Asking questions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "comment ?",
         "english": "how?",
         "topic_name": "Asking questions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "est-ce que ?",
         "english": "expression put before a verb to make sentence into a question",
         "topic_name": "Asking questions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "o\u00f9 ?",
         "english": "where?",
         "topic_name": "Asking questions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "pourquoi ?",
         "english": "why?",
         "topic_name": "Asking questions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "quand ?",
         "english": "when?",
         "topic_name": "Asking questions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "que ?",
         "english": "what?",
         "topic_name": "Asking questions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "quel/quelle ?",
         "english": "which?",
         "topic_name": "Asking questions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "qu\u2019est-ce que ?",
         "english": "what?",
         "topic_name": "Asking questions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "qu\u2019est-ce qui ?",
         "english": "what?",
         "topic_name": "Asking questions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "qu\u2019est-ce que c\u2019est ?",
         "english": "what is it?",
         "topic_name": "Asking questions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "qui ?",
         "english": "who?",
         "topic_name": "Asking questions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "quoi ?",
         "english": "what?",
         "topic_name": "Asking questions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "\u00e0 quelle heure ?",
         "english": "at what time?",
         "topic_name": "Common questions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "\u00e7a s\u2019\u00e9crit comment ?",
         "english": "how is that written?",
         "topic_name": "Common questions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "c\u2019est combien ?",
         "english": "how much is it?",
         "topic_name": "Common questions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "c\u2019est quelle date ?",
         "english": "what is the date?",
         "topic_name": "Common questions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "c\u2019est quel jour ?",
         "english": "what day is it?",
         "topic_name": "Common questions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "de quelle couleur ?",
         "english": "what colour?",
         "topic_name": "Common questions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "d\u2019o\u00f9 ?",
         "english": "from where?",
         "topic_name": "Common questions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "pour combien de temps ?",
         "english": "for how long?",
         "topic_name": "Common questions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "que veut dire... ?",
         "english": "what does... mean?",
         "topic_name": "Common questions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "quelle heure est-il ?",
         "english": "what time is it?",
         "topic_name": "Common questions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "\u00e0 bient\u00f4t",
         "english": "see you soon",
         "topic_name": "Greetings and exclamations",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "\u00e0 demain",
         "english": "see you tomorrow",
         "topic_name": "Greetings and exclamations",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "\u00e0 tout \u00e0 l\u2019heure",
         "english": "see you soon/later",
         "topic_name": "Greetings and exclamations",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "all\u00f4",
         "english": "hello (on phone)",
         "topic_name": "Greetings and exclamations",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "amiti\u00e9s",
         "english": "best wishes",
         "topic_name": "Greetings and exclamations",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "au secours",
         "english": "help",
         "topic_name": "Greetings and exclamations",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "bien s\u00fbr",
         "english": "of course, certainly",
         "topic_name": "Greetings and exclamations",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "bienvenue",
         "english": "welcome",
         "topic_name": "Greetings and exclamations",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "bon anniversaire",
         "english": "happy birthday",
         "topic_name": "Greetings and exclamations",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "bon app\u00e9tit",
         "english": "enjoy your meal",
         "topic_name": "Greetings and exclamations",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "bon voyage",
         "english": "have a good trip",
         "topic_name": "Greetings and exclamations",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "bonne ann\u00e9e",
         "english": "happy new year",
         "topic_name": "Greetings and exclamations",
         "foundation": true,
-        "hi,gher": true
-    },
+        "higher": true
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "bonne chance",
         "english": "good luck",
         "topic_name": "Greetings and exclamations",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "bonne id\u00e9e",
         "english": "good idea",
         "topic_name": "Greetings and exclamations",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "bonne nuit",
         "english": "good night",
         "topic_name": "Greetings and exclamations",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "bonnes vacances",
         "english": "have a good holiday",
         "topic_name": "Greetings and exclamations",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "bonsoir",
         "english": "good evening ",
         "topic_name": "Greetings and exclamations",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "d\u2019accord",
         "english": "ok",
         "topic_name": "Greetings and exclamations",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "de rien",
         "english": "don't mention it",
         "topic_name": "Greetings and exclamations",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "d\u00e9sol\u00e9 (e)",
         "english": "sorry",
         "topic_name": "Greetings and exclamations",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "excusez-moi",
         "english": "excuse me",
         "topic_name": "Greetings and exclamations",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "f\u00e9licitations",
         "english": "congratulations",
         "topic_name": "Greetings and exclamations",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "joyeux No\u00ebl",
         "english": "Merry Christmas",
         "topic_name": "Greetings and exclamations",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "meilleurs voeux",
         "english": "best wishes",
         "topic_name": "Greetings and exclamations",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "pardon",
         "english": "excuse me",
         "topic_name": "Greetings and exclamations",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "quel dommage",
         "english": "what a pity",
         "topic_name": "Greetings and exclamations",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "salut",
         "english": "hi",
         "topic_name": "Greetings and exclamations",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "sant\u00e9",
         "english": "cheers",
         "topic_name": "Greetings and exclamations",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "s\u2019il te/vous pla\u00eet",
         "english": "please",
         "topic_name": "Greetings and exclamations",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "\u00e0 mon avis",
         "english": "in my opinion",
         "topic_name": "Opinions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "absolument",
         "english": "absolutely",
         "topic_name": "Opinions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "affreux",
         "english": "awful",
         "topic_name": "Opinions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "agr\u00e9able",
         "english": "pleasant",
         "topic_name": "Opinions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "amusant",
         "english": "funny",
         "topic_name": "Opinions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "barbant",
         "english": "boring",
         "topic_name": "Opinions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "bien entendu",
         "english": "of course",
         "topic_name": "Opinions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "bien s\u00fbr",
         "english": "of course",
         "topic_name": "Opinions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "\u00e7a d\u00e9pend",
         "english": "that depends",
         "topic_name": "Opinions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "\u00e7a m\u2019\u00e9nerve",
         "english": "it gets on my nerves",
         "topic_name": "Opinions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "\u00e7a me fait rire",
         "english": "it makes me laugh",
         "topic_name": "Opinions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "\u00e7a me pla\u00eet",
         "english": "I like it",
         "topic_name": "Opinions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "\u00e7a m\u2019est \u00e9gal",
         "english": "it\u2019s all the same to me",
         "topic_name": "Opinions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "\u00e7a ne me dit rien",
         "english": "it means nothing to me/I don't fancy that/I don't feel like it",
         "topic_name": "Opinions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "\u00e7a suffit",
         "english": "that\u2019s enough",
         "topic_name": "Opinions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "casse-pieds",
         "english": "annoying",
         "topic_name": "Opinions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "certainement",
         "english": "certainly",
         "topic_name": "Opinions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "cher",
         "english": "dear, expensive",
         "topic_name": "Opinions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "chouette",
         "english": "great",
         "topic_name": "Opinions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "comme ci comme \u00e7a",
         "english": "so-so",
         "topic_name": "Opinions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "compliqu\u00e9",
         "english": "complicated",
         "topic_name": "Opinions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "content",
         "english": "happy",
         "topic_name": "Opinions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "croire",
         "english": "to believe",
         "topic_name": "Opinions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "d\u00e9sagr\u00e9able",
         "english": "unpleasant",
         "topic_name": "Opinions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "d\u00e9sirer",
         "english": "to want",
         "topic_name": "Opinions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "d\u00e9tester",
         "english": "to hate",
         "topic_name": "Opinions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "dire",
         "english": "to say",
         "topic_name": "Opinions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "dr\u00f4le",
         "english": "funny",
         "topic_name": "Opinions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "emb\u00eatant",
         "english": "annoying",
         "topic_name": "Opinions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "en g\u00e9n\u00e9ral",
         "english": "in general",
         "topic_name": "Opinions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "enchant\u00e9",
         "english": "delighted",
         "topic_name": "Opinions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "ennuyeux",
         "english": "boring",
         "topic_name": "Opinions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "esp\u00e9rer",
         "english": "to hope",
         "topic_name": "Opinions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "\u00e9tonn\u00e9",
         "english": "astonished, amazed",
         "topic_name": "Opinions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "facile",
         "english": "easy",
         "topic_name": "Opinions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "faible",
         "english": "weak",
         "topic_name": "Opinions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "formidable",
         "english": "great",
         "topic_name": "Opinions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "franchement",
         "english": "frankly",
         "topic_name": "Opinions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "g\u00e9n\u00e9ralement",
         "english": "generally",
         "topic_name": "Opinions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "g\u00e9nial",
         "english": "great",
         "topic_name": "Opinions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "grave",
         "english": "serious",
         "topic_name": "Opinions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "habile",
         "english": "clever",
         "topic_name": "Opinions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "int\u00e9ressant",
         "english": "interesting",
         "topic_name": "Opinions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "(s\u2019)int\u00e9resser \u00e0",
         "english": "to be interested in",
         "topic_name": "Opinions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "inutile",
         "english": "useless",
         "topic_name": "Opinions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "incroyable",
         "english": "incredible",
         "topic_name": "Opinions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "inquiet/inqui\u00e8te",
         "english": "worried",
         "topic_name": "Opinions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "marrant",
         "english": "funny",
         "topic_name": "Opinions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "marre (en avoir)",
         "english": "(to be) fed up",
         "topic_name": "Opinions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "mauvais",
         "english": "bad",
         "topic_name": "Opinions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "merveilleux/merveilleuse",
         "english": "marvellous",
         "topic_name": "Opinions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "mignon/mignonne",
         "english": "cute",
         "topic_name": "Opinions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "moche",
         "english": "ugly",
         "topic_name": "Opinions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "(moi) non plus",
         "english": "nor me neither, nor do I",
         "topic_name": "Opinions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "nouveau",
         "english": "new",
         "topic_name": "Opinions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "nul",
         "english": "rubbish",
         "topic_name": "Opinions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "parfait",
         "english": "perfect",
         "topic_name": "Opinions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "passionnant",
         "english": "exciting",
         "topic_name": "Opinions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "peine la",
         "english": "the bother",
         "topic_name": "Opinions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "penser",
         "english": "to think",
         "topic_name": "Opinions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "peut-\u00eatre",
         "english": "perhaps",
         "topic_name": "Opinions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "pratique",
         "english": "practical",
         "topic_name": "Opinions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "pr\u00e9f\u00e9rer",
         "english": "to prefer",
         "topic_name": "Opinions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "promettre",
         "english": "to promise",
         "topic_name": "Opinions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "ridicule",
         "english": "ridiculous",
         "topic_name": "Opinions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "rigolo",
         "english": "funny",
         "topic_name": "Opinions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "sage",
         "english": "well behaved",
         "topic_name": "Opinions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "sembler",
         "english": "to seem",
         "topic_name": "Opinions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "sensass",
         "english": "sensational",
         "topic_name": "Opinions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "supporter",
         "english": "to put up with",
         "topic_name": "Opinions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "utile",
         "english": "useful",
         "topic_name": "Opinions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "vouloir",
         "english": "to wish, want",
         "topic_name": "Opinions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "vraiment",
         "english": "really, truly",
         "topic_name": "Opinions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "printemps le",
         "english": "spring",
         "topic_name": "Seasons",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "\u00e9t\u00e9 l' (m)",
         "english": "summer",
         "topic_name": "Seasons",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "automne l' (m)",
         "english": "autumn",
         "topic_name": "Seasons",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "hiver l' (m)",
         "english": "winter",
         "topic_name": "Seasons",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "\u00e0 la fois",
         "english": "at the same time",
         "topic_name": "Time expressions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "\u00e0 l\u2019avenir",
         "english": "in the future",
         "topic_name": "Time expressions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "\u00e0 l\u2019heure",
         "english": "on time",
         "topic_name": "Time expressions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "\u00e0 temps partiel",
         "english": "part-time",
         "topic_name": "Time expressions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "an l' (m)",
         "english": "year",
         "topic_name": "Time expressions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "ann\u00e9e l' (f)",
         "english": "year",
         "topic_name": "Time expressions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "apr\u00e8s",
         "english": "after",
         "topic_name": "Time expressions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "apr\u00e8s-demain",
         "english": "the day after tomorrow",
         "topic_name": "Time expressions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "apr\u00e8s-midi",
         "english": "afternoon",
         "topic_name": "Time expressions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "aujourd\u2019hui",
         "english": "today",
         "topic_name": "Time expressions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "auparavant",
         "english": "formerly, in the past",
         "topic_name": "Time expressions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "avant",
         "english": "before",
         "topic_name": "Time expressions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "avant-hier",
         "english": "the day before yesterday",
         "topic_name": "Time expressions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "bient\u00f4t",
         "english": "soon",
         "topic_name": "Time expressions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "d\u2019abord",
         "english": "at first, firstly",
         "topic_name": "Time expressions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "d\u2019habitude",
         "english": "usually",
         "topic_name": "Time expressions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "de bonne heure",
         "english": "early",
         "topic_name": "Time expressions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "d\u00e9but le",
         "english": "start",
         "topic_name": "Time expressions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "demain",
         "english": "tomorrow",
         "topic_name": "Time expressions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "dernier/derni\u00e8re",
         "english": "last",
         "topic_name": "Time expressions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "de temps en temps",
         "english": "from time to time",
         "topic_name": "Time expressions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "d\u00e9j\u00e0",
         "english": "already",
         "topic_name": "Time expressions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "de nouveau",
         "english": "again",
         "topic_name": "Time expressions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "en attendant",
         "english": "whilst waiting (for), meanwhile",
         "topic_name": "Time expressions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "en avance",
         "english": "in advance",
         "topic_name": "Time expressions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "en ce moment",
         "english": "at the moment",
         "topic_name": "Time expressions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "en retard",
         "english": "late",
         "topic_name": "Time expressions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "en train de (faire...)",
         "english": "(to be) doing",
         "topic_name": "Time expressions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "en m\u00eame temps",
         "english": "at the same time",
         "topic_name": "Time expressions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "encore une fois",
         "english": "once more, again",
         "topic_name": "Time expressions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "enfin",
         "english": "at last, finally",
         "topic_name": "Time expressions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "environ",
         "english": "about, approximately",
         "topic_name": "Time expressions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "fin la",
         "english": "end",
         "topic_name": "Time expressions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "hier",
         "english": "yesterday",
         "topic_name": "Time expressions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "il y a",
         "english": "ago",
         "topic_name": "Time expressions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "jour le",
         "english": "day",
         "topic_name": "Time expressions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "journ\u00e9e la",
         "english": "day",
         "topic_name": "Time expressions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "lendemain le",
         "english": "the next day",
         "topic_name": "Time expressions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "longtemps",
         "english": "for a long time",
         "topic_name": "Time expressions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "maintenant",
         "english": "now",
         "topic_name": "Time expressions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "matin le",
         "english": "morning",
         "topic_name": "Time expressions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "mois le",
         "english": "month",
         "topic_name": "Time expressions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "normalement",
         "english": "normally",
         "topic_name": "Time expressions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "nuit la",
         "english": "night",
         "topic_name": "Time expressions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "parfois",
         "english": "sometimes",
         "topic_name": "Time expressions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "pass\u00e9 le",
         "english": "past",
         "topic_name": "Time expressions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "pendant",
         "english": "during",
         "topic_name": "Time expressions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "plus tard",
         "english": "later",
         "topic_name": "Time expressions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "presque",
         "english": "almost, nearly",
         "topic_name": "Time expressions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "prochain",
         "english": "next",
         "topic_name": "Time expressions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "quelquefois",
         "english": "sometimes",
         "topic_name": "Time expressions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "rarement",
         "english": "rarely",
         "topic_name": "Time expressions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "r\u00e9cemment",
         "english": "recently",
         "topic_name": "Time expressions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "semaine la",
         "english": "week",
         "topic_name": "Time expressions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "seulement",
         "english": "only",
         "topic_name": "Time expressions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "si\u00e8cle le",
         "english": "century",
         "topic_name": "Time expressions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "soir le",
         "english": "evening",
         "topic_name": "Time expressions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "soudain",
         "english": "suddenly",
         "topic_name": "Time expressions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "souvent",
         "english": "often",
         "topic_name": "Time expressions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "suivant",
         "english": "following",
         "topic_name": "Time expressions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "sur le point de (\u00eatre)",
         "english": "(to be) about to",
         "topic_name": "Time expressions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "tard",
         "english": "late",
         "topic_name": "Time expressions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "t\u00f4t",
         "english": "early",
         "topic_name": "Time expressions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "toujours",
         "english": "always, still",
         "topic_name": "Time expressions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "tous les jours",
         "english": "every day",
         "topic_name": "Time expressions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "tout \u00e0 coup",
         "english": "suddenly, all of a sudden",
         "topic_name": "Time expressions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "tout de suite",
         "english": "immediately",
         "topic_name": "Time expressions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "vite",
         "english": "quickly",
         "topic_name": "Time expressions",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "\u00e0 droite",
         "english": "on/to the right",
         "topic_name": "Location and distance",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "\u00e0 gauche",
         "english": "on/to the left",
         "topic_name": "Location and distance",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "banlieue la",
         "english": "suburb",
         "topic_name": "Location and distance",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "centre-ville le",
         "english": "town centre",
         "topic_name": "Location and distance",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "campagne la",
         "english": "countryside",
         "topic_name": "Location and distance",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "chez",
         "english": "at the house of",
         "topic_name": "Location and distance",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "de chaque c\u00f4t\u00e9",
         "english": "from each side",
         "topic_name": "Location and distance",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "de l\u2019autre c\u00f4t\u00e9",
         "english": "from the other side",
         "topic_name": "Location and distance",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "en bas",
         "english": "down(stairs)",
         "topic_name": "Location and distance",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "en haut",
         "english": "up(stairs)",
         "topic_name": "Location and distance",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "est l' (m)",
         "english": "east",
         "topic_name": "Location and distance",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "ici",
         "english": "here",
         "topic_name": "Location and distance",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "l\u00e0",
         "english": "there",
         "topic_name": "Location and distance",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "l\u00e0-bas",
         "english": "over there",
         "topic_name": "Location and distance",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "loin de",
         "english": "far from",
         "topic_name": "Location and distance",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "nord le",
         "english": "north",
         "topic_name": "Location and distance",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "nulle part",
         "english": "nowhere",
         "topic_name": "Location and distance",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "ouest l' (m)",
         "english": "west",
         "topic_name": "Location and distance",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "par",
         "english": "by",
         "topic_name": "Location and distance",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "partout",
         "english": "everywhere",
         "topic_name": "Location and distance",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "quelque part",
         "english": "somewhere",
         "topic_name": "Location and distance",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "situ\u00e9 (e)",
         "english": "situated",
         "topic_name": "Location and distance",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "sud le",
         "english": "south",
         "topic_name": "Location and distance",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "tout droit",
         "english": "straight ahead",
         "topic_name": "Location and distance",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "tout pr\u00e8s",
         "english": "very near",
         "topic_name": "Location and distance",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "toutes directions",
         "english": "all directions",
         "topic_name": "Location and distance",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "ville la",
         "english": "town",
         "topic_name": "Location and distance",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "ch\u00e2tain",
         "english": "light brown",
         "topic_name": "Colours",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "clair",
         "english": "light",
         "topic_name": "Colours",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "fonc\u00e9",
         "english": "dark",
         "topic_name": "Colours",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "marron",
         "english": "brown",
         "topic_name": "Colours",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "noisette",
         "english": "hazel",
         "topic_name": "Colours",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "pourpre",
         "english": "purple",
         "topic_name": "Colours",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "rose ",
         "english": "pink",
         "topic_name": "Colours",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "roux",
         "english": "ginger",
         "topic_name": "Colours",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "assez",
         "english": "enough, quite",
         "topic_name": "Weights and measures",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "bas",
         "english": "low",
         "topic_name": "Weights and measures",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "bo\u00eete la",
         "english": "box, tin, can",
         "topic_name": "Weights and measures",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "bouteille la",
         "english": "bottle",
         "topic_name": "Weights and measures",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "court",
         "english": "short",
         "topic_name": "Weights and measures",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "demi le",
         "english": "half",
         "topic_name": "Weights and measures",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "encore de",
         "english": "more ",
         "topic_name": "Weights and measures",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "\u00e9troit",
         "english": "narrow",
         "topic_name": "Weights and measures",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "gros",
         "english": "fat",
         "topic_name": "Weights and measures",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "haut",
         "english": "high",
         "topic_name": "Weights and measures",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "large",
         "english": "wide",
         "topic_name": "Weights and measures",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "maigre",
         "english": "skinny, thin",
         "topic_name": "Weights and measures",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "mince",
         "english": "slim, thin",
         "topic_name": "Weights and measures",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "moiti\u00e9 la",
         "english": "half",
         "topic_name": "Weights and measures",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "morceau le",
         "english": "piece",
         "topic_name": "Weights and measures",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "moyen/moyenne",
         "english": "medium, average",
         "topic_name": "Weights and measures",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "nombre le",
         "english": "number",
         "topic_name": "Weights and measures",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "paquet le",
         "english": "packet",
         "topic_name": "Weights and measures",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "pas mal de",
         "english": "lots of",
         "topic_name": "Weights and measures",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "peser",
         "english": "to weigh",
         "topic_name": "Weights and measures",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "plein de",
         "english": "full of, lots of",
         "topic_name": "Weights and measures",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "pointure la",
         "english": "size (for shoes)",
         "topic_name": "Weights and measures",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "suffisamment",
         "english": "sufficiently",
         "topic_name": "Weights and measures",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "taille la",
         "english": "size (for clothes)",
         "topic_name": "Weights and measures",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "tranche la",
         "english": "slice",
         "topic_name": "Weights and measures",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "trop",
         "english": "too (much)",
         "topic_name": "Weights and measures",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "carr\u00e9",
         "english": "square",
         "topic_name": "Shape",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "rond",
         "english": "round",
         "topic_name": "Shape",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "averse l' (f)",
         "english": "shower",
         "topic_name": "Weather",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "briller",
         "english": "to shine",
         "topic_name": "Weather",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "brouillard le",
         "english": "fog",
         "topic_name": "Weather",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "brume la",
         "english": "mist",
         "topic_name": "Weather",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "chaleur la",
         "english": "heat",
         "topic_name": "Weather",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "ciel le",
         "english": "sky",
         "topic_name": "Weather",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "climat le",
         "english": "climate",
         "topic_name": "Weather",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "couvert",
         "english": "overcast",
         "topic_name": "Weather",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "doux",
         "english": "mild",
         "topic_name": "Weather",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "\u00e9clair l' (m)",
         "english": "lightning",
         "topic_name": "Weather",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "\u00e9claircie l' (f)",
         "english": "bright spell",
         "topic_name": "Weather",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "ensoleill\u00e9",
         "english": "sunny",
         "topic_name": "Weather",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "faire beau",
         "english": "to be fine (weather)",
         "topic_name": "Weather",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "faire mauvais",
         "english": "to be bad (weather)",
         "topic_name": "Weather",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "geler",
         "english": "to freeze",
         "topic_name": "Weather",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "glace la",
         "english": "ice",
         "topic_name": "Weather",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "humide",
         "english": "humid, wet",
         "topic_name": "Weather",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "m\u00e9t\u00e9o la",
         "english": "weather forecast",
         "topic_name": "Weather",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "mouill\u00e9",
         "english": "wet",
         "topic_name": "Weather",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "neiger",
         "english": "to snow",
         "topic_name": "Weather",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "nuage le",
         "english": "cloud",
         "topic_name": "Weather",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "nuageux",
         "english": "cloudy",
         "topic_name": "Weather",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "ombre l' (m)",
         "english": "shade, shadow",
         "topic_name": "Weather",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "orage l' (m)",
         "english": "storm",
         "topic_name": "Weather",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "orageux",
         "english": "stormy",
         "topic_name": "Weather",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "pleuvoir",
         "english": "to rain",
         "topic_name": "Weather",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "pluie la",
         "english": "rain",
         "topic_name": "Weather",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "sec/s\u00e8che",
         "english": "dry",
         "topic_name": "Weather",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "temp\u00eate la",
         "english": "storm",
         "topic_name": "Weather",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "temps le",
         "english": "weather",
         "topic_name": "Weather",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "tonnerre le",
         "english": "thunder",
         "topic_name": "Weather",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "tremper",
         "english": "to soak",
         "topic_name": "Weather",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "vent le",
         "english": "wind",
         "topic_name": "Weather",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "complet/compl\u00e8te",
         "english": "full",
         "topic_name": "Access",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "entr\u00e9e l' (f)",
         "english": "entry, entrance",
         "topic_name": "Access",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "libre",
         "english": "free, vacant, unoccupied",
         "topic_name": "Access",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "fermer",
         "english": "to close",
         "topic_name": "Access",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "interdit",
         "english": "forbidden, not allowed",
         "topic_name": "Access",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "occup\u00e9",
         "english": "taken, occupied, engaged",
         "topic_name": "Access",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "ouvert",
         "english": "open",
         "topic_name": "Access",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "ouvrir",
         "english": "to open",
         "topic_name": "Access",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "sortie la",
         "english": "exit",
         "topic_name": "Access",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "avoir raison ",
         "english": "to be right",
         "topic_name": "Correctness",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "avoir tort",
         "english": "to be wrong",
         "topic_name": "Correctness",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "corriger",
         "english": "to correct",
         "topic_name": "Correctness",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "erreur l' (f)",
         "english": "error, mistake",
         "topic_name": "Correctness",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "faute la",
         "english": "fault, mistake",
         "topic_name": "Correctness",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "faux/fausse",
         "english": "false",
         "topic_name": "Correctness",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "il (me) faut",
         "english": "you (I) must",
         "topic_name": "Correctness",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "juste",
         "english": "correct",
         "topic_name": "Correctness",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "obligatoire",
         "english": "compulsory",
         "topic_name": "Correctness",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "parfait",
         "english": "perfect",
         "topic_name": "Correctness",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "s\u00fbr",
         "english": "certain, sure",
         "topic_name": "Correctness",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "se tromper",
         "english": "to make a mistake",
         "topic_name": "Correctness",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "vrai",
         "english": "true",
         "topic_name": "Correctness",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "argent l' (m)",
         "english": "silver",
         "topic_name": "Materials",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "b\u00e9ton le",
         "english": "concrete",
         "topic_name": "Materials",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "bois le",
         "english": "wood",
         "topic_name": "Materials",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "cuir le",
         "english": "leather",
         "topic_name": "Materials",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "fer le",
         "english": "iron",
         "topic_name": "Materials",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "laine la",
         "english": "wool",
         "topic_name": "Materials",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "or l' (m)",
         "english": "gold",
         "topic_name": "Materials",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "soie la",
         "english": "silk",
         "topic_name": "Materials",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "verre le",
         "english": "glass",
         "topic_name": "Materials",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "CDI centre de documentation et d\u2019information le",
         "english": "resource centre",
         "topic_name": "Common abbreviations",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "CES coll\u00e8ge d\u2019enseignement secondaire le",
         "english": "secondary school",
         "topic_name": "Common abbreviations",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "EPS \u00e9ducation physique et sportive l\u2019 (f)",
         "english": "PE (physical education)",
         "topic_name": "Common abbreviations",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "HLM habitation \u00e0 loyer mod\u00e9r\u00e9 l\u2019 (f)",
         "english": "council/social housing accommodation",
         "topic_name": "Common abbreviations",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "SAMU service d\u2019aide m\u00e9dicale d\u2019urgence le",
         "english": "emergency medical services",
         "topic_name": "Common abbreviations",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "SDF sans domicile fixe le",
         "english": "homeless person",
         "topic_name": "Common abbreviations",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "SNCF soci\u00e9t\u00e9 nationale des chemins de fer fran\u00e7ais la",
         "english": "National Rail Service",
         "topic_name": "Common abbreviations",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "TGV train \u00e0 grande vitesse le",
         "english": "high-speed train",
         "topic_name": "Common abbreviations",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "TVA taxe sur la valeur ajout\u00e9e la ",
         "english": "VAT (Value Added Tax)",
         "topic_name": "Common abbreviations",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     {
         "french": "VTT v\u00e9lo tout terrain le",
         "english": "mountain bike",
         "topic_name": "Common abbreviations",
         "foundation": true,
         "higher": true
-    },
+,"theme_based": false,
+"theme": ""
+},
     { "french": "aimable", "english": "kind", "topic_name": "Me, my family and friends", "foundation": true, "higher": false, "theme_based": true, "theme": "Identity and culture" },
     { "french": "a\u00een\u00e9", "english": "elder", "topic_name": "Me, my family and friends", "foundation": true, "higher": false, "theme_based": true, "theme": "Identity and culture" },
     { "french": "amour l\u2019 (m)", "english": "love", "topic_name": "Me, my family and friends", "foundation": true, "higher": false, "theme_based": true, "theme": "Identity and culture" },
