@@ -1,0 +1,142 @@
+/* Variables and mixins declared here will be available in all other SCSS files */
+// $base-color: #00B347;
+$base-color: #b9b9b9;
+// $secondary-color: #0036F8;
+$secondary-color: #F2CF66;
+$alert-color: #FF0000;
+$friendly-color: #ff8ee3;
+$correct-color: #34be49;
+$margin-question: 8vw;
+
+@mixin text-normal {
+    // font-family: 'Kaisei Tokumin';
+    font-family: 'Quicksand', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+}
+@mixin bigbutton-font {
+    // font-family: 'Kaisei Tokumin';
+    font-family: 'Quicksand', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 25px;
+}
+@mixin boxshadow-btn-small {
+    box-shadow: 7px 5px 0px $secondary-color;
+    animation: forwards 300ms smallboxshadowbtnopen;
+    &:hover{
+        animation: forwards 300ms smallboxshadowbtnclose;
+    }
+    cursor: grabbing;
+}
+@keyframes smallboxshadowbtnclose{
+    0%{
+        box-shadow: 8px 8px 0px $secondary-color;
+    }
+    100%{
+        box-shadow: 7px 5px 0px $secondary-color;
+    }
+}
+@keyframes smallboxshadowbtnopen {
+    0%{
+        box-shadow: 7px 5px 0px $secondary-color;
+    }
+    100%{
+        box-shadow: 8px 8px 0px $secondary-color;
+    }
+}
+@mixin boxshadow-btn {
+    
+    box-shadow: 10px 7px 0px $secondary-color;
+    animation: forwards 300ms boxshadowbtnopen;
+    &:hover{
+        animation: forwards 300ms boxshadowbtnclose;
+    }
+    cursor: grabbing;
+}
+@keyframes boxshadowbtnclose{
+    0%{
+        box-shadow: 10px 10px 0px $secondary-color;
+    }
+    100%{
+        box-shadow: 7px 7px 0px $secondary-color;
+    }
+}
+@keyframes boxshadowbtnopen {
+    0%{
+        box-shadow: 7px 7px 0px $secondary-color;
+    }
+    100%{
+        box-shadow: 10px 10px 0px $secondary-color;
+    }
+}
+@mixin titlefont {
+    // font-family: 'Kadwa';
+    font-family: 'Quicksand', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+	@media (min-width: 800px){
+font-size: 25px;
+    }
+    font-size: 30px;
+    line-height: 60px;
+
+    background: linear-gradient(90deg, rgb(37,0,171) 0%, #1298ff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+@mixin text-x{
+    // font-family: 'Kaisei Tokumin';
+    font-family: 'Quicksand', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 15px;
+	@media (min-width: 800px){
+        font-size: 20px;
+    }
+}
+@mixin text-small{
+    // font-family: 'Kaisei Tokumin';
+    font-family: 'Quicksand', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 16px;
+	@media (min-width: 800px){
+        font-size: 20px
+	}
+}
+@mixin text-xx{
+    // font-family: 'Kaisei Tokumin';
+    font-family: 'Quicksand', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 36px;
+}
+@mixin text-extra-small {
+    // font-family: 'Kaisei Tokumin';
+    font-family: 'Quicksand', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 15px;
+    line-height: 22px;
+}
+@mixin text-question {
+    // font-family: 'Kaisei Tokumin';
+    font-family: 'Quicksand', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 36px;
+}
+@mixin bigbutton-style {
+    margin-left:10vw;
+    margin-right:10vw;
+    width: 80vw;
+    border-radius: 30px;
+    border-color: none;
+    border: 0px;
+}
