@@ -1,5 +1,5 @@
 <script lang="ts">
-  import Topbar from './Topbar.svelte';
+      import Topbar from './Topbar.svelte';
 
 	import { fly } from "svelte/transition";
 	import StartNow from "./Components/StartNow.svelte";
